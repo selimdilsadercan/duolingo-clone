@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
-import ClerkProvider from "@/providers/clerk-provider";
 const font = Nunito({ subsets: ["latin"] });
+
+import ClerkProvider from "@/providers/clerk-provider";
 
 export const metadata: Metadata = {
   title: "Duolingo Clone"

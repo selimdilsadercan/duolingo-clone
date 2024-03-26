@@ -9,10 +9,10 @@
 
 - [x] "npm i @clerk/nextjs"
 - [x] create clerk project
-- [x] add .env keys and .env after sign out shits
+- [x] add .env keys
 - [x] add providers/clerk-provider.tsx and add wrap layout.tsx's children
 - [x] add middleware.ts
-- [ ] add app/(auth)
+- [x] make the signin button mode to modal
 
 - [ ] "npm i convex"
 - [ ] "npx convex dev" to run convex, change .env.local to .env
@@ -39,3 +39,5 @@
 ---
 
 - .next içindeki dosyalar app folderının içine page.tsx dışında bir file oluşturunca açılıyor
+- sayfa ile alakalı componentleri app klasörü içinde components folderı olmadan tanımladı
+- gamish tarzda assetler için: https://kenney.nl/
