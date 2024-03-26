@@ -7,10 +7,12 @@
 - [x] "npx shadcn-ui@latest init" to initialize shadcn
 - [x] html, body, :root { height: 100% } thing at app/globals.css
 
-- [ ] "npm i @clerk/nextjs", middleware ve (auth) kullanmadık
-- [ ] create clerk project
-- [ ] add keys to .env
-- [ ] create jwt template and select convex, copy issuer and save
+- [x] "npm i @clerk/nextjs"
+- [x] create clerk project
+- [x] add .env keys and .env after sign out shits
+- [x] add providers/clerk-provider.tsx and add wrap layout.tsx's children
+- [x] add middleware.ts
+- [ ] add app/(auth)
 
 - [ ] "npm i convex"
 - [ ] "npx convex dev" to run convex, change .env.local to .env
