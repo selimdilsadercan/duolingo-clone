@@ -36,13 +36,4 @@
 
 ---
 
-- AuthLoading ve Authenticated kullanarak login sırasında bir loading animation yapabiliyosun
-- Clerk yazısını dev moddayken kapatabiliyosun
-- searchparams, state yönetiminden daha mantıklı
-- clerk > customization > avatars kısmından default resmi isme göre harf olarak değiştirebilirsin
-- useDebounce ile inputlarda zaman aralıklı state değişimi yapıyor
-- her bir durum için ayrı empty state'ler yapmayı unutma
-- formatDistanceToNow ile related date yazabiliyosun
-- many-to-one ya da many-to-one relationlar için ayrı veri yapıları tutuyoruz
-- Component.Skeleton kullanırken ayrı bir use client Loading dosyası açıp her şeyi onda birleştir
-- vercel'da yayınlamadan önce "npm run build" yaparak bir kontrol et (npm run dev kapalı olmalı)
+- .next içindeki dosyalar app folderının içine page.tsx dışında bir file oluşturunca açılıyor
