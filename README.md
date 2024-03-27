@@ -27,3 +27,4 @@
 - sayfa ile alakalı componentleri app klasörü içinde components folderı olmadan tanımladı
 - gamish tarzda assetler için: https://kenney.nl/
 - bayrak paketi: https://flagpack.xyz/
+- microsoft emoji paketi: https://github.com/microsoft/fluentui-emoji

@@ -1,3 +1,9 @@
+import FeedWrapper from "@/components/learn/FeedWrapper";
+import Navbar from "@/components/learn/Navbar";
+import Promo from "@/components/learn/Promo";
+import { Quests } from "@/components/learn/Quests";
+import StickyWrapper from "@/components/learn/StickyWrapper";
+import UserProgress from "@/components/learn/UserProgress";
 import { redirect } from "next/navigation";
 
 async function Page() {
@@ -27,14 +33,14 @@ async function Page() {
 
   return (
     <div className="flex flex-row-reverse gap-[48px] px-6">
-      {/* <StickyWrapper>
-        <UserProgress activeCourse={userProgress.activeCourse} hearts={userProgress.hearts} points={userProgress.points} hasActiveSubscription={isPro} />
-        {!isPro && <Promo />}
-        <Quests points={userProgress.points} />
-      </StickyWrapper> */}
-      {/* <FeedWrapper>
-        <Header title={userProgress.activeCourse.title} />
-        {units.map((unit) => (
+      <StickyWrapper>
+        <UserProgress /*activeCourse={userProgress.activeCourse} hearts={userProgress.hearts} points={userProgress.points} hasActiveSubscription={isPro}*/ />
+        {/* {!isPro && <Promo />} */}
+        <Quests /*points={userProgress.points}*/ />
+      </StickyWrapper>
+      <FeedWrapper>
+        <Navbar /*title={userProgress.activeCourse.title}*/ />
+        {/* {units.map((unit) => (
           <div key={unit.id} className="mb-10">
             <Unit
               id={unit.id}
@@ -52,8 +58,8 @@ async function Page() {
               activeLessonPercentage={lessonPercentage}
             />
           </div>
-        ))}
-      </FeedWrapper> */}
+        ))} */}
+      </FeedWrapper>
     </div>
   );
 }

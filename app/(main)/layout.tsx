@@ -1,4 +1,4 @@
-import MobileNavbar from "@/components/nav/MobileNavbar";
+import MobileNavbar from "@/components/learn/MobileNavbar";
 import Sidebar from "@/components/nav/Sidebar";
 
 function Layout({ children }: { children: React.ReactNode }) {
