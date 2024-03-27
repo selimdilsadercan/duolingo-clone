@@ -26,8 +26,8 @@
 
 ---
 
-- primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, clerk
-- secondary stack:
+- primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, clerk, neon, drizzle-orm
+- secondary stack: bun
 - ui: font = nunito, icons = lucide
 - extensions:
 
@@ -38,3 +38,6 @@
 - gamish tarzda assetler için: https://kenney.nl/
 - bayrak paketi: https://flagpack.xyz/
 - microsoft emoji paketi: https://github.com/microsoft/fluentui-emoji
+- react cache ile basit düzey caching yapabiliyoruz
+- drizzle schema'daki elemanları typeof kullanarak alabiliyoruz
+- rid-cols-[repeat(auto-fill,minmax(210px,1fr))] ile auto grid yapabiliyoruz
