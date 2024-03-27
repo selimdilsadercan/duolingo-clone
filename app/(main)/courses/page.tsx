@@ -1,11 +1,9 @@
-import List from "@/components/courses/List";
 import { getCourses, getUserProgress } from "@/db/queries";
+import List from "@/components/courses/List";
 
-const CoursesPage = async () => {
-  const coursesData = getCourses();
-  const userProgressData = getUserProgress();
-
-  const [courses, userProgress] = await Promise.all([coursesData, userProgressData]);
+async function Page() {
+  const courses = await getCourses();
+  const userProgress = await getUserProgress();
 
   return (
     <div className="h-full max-w-[912px] px-3 mx-auto">
@@ -13,6 +11,6 @@ const CoursesPage = async () => {
       <List courses={courses} activeCourseId={userProgress?.activeCourseId} />
     </div>
   );
-};
+}
 
-export default CoursesPage;
+export default Page;
