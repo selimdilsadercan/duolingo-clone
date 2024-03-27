@@ -22,6 +22,7 @@
 - [x] create /db/drizzle.ts
 - [x] create /db/schema.ts and create schemas
 - [x] "npm i dotenv" and create /drizzle.config.ts
+- [x] "npm i -g tsx" and add "seed": "tsx ./scripts/seed.ts" and run npm run seed to seed database
 
 ---
 
