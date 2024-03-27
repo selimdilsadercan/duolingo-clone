@@ -3,7 +3,8 @@
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { courses, userProgress } from "@/db/schema";
-// import { toast } from "sonner";
+import { toast } from "sonner";
+import { upsertUserProgress } from "@/helpers/user-progress";
 import Card from "./Card";
 
 interface Props {
@@ -19,9 +20,9 @@ function List({ courses, activeCourseId }: Props) {
     if (pending) return;
     if (id === activeCourseId) return router.push("/learn");
 
-    // startTransition(() => {
-    //   upsertUserProgress(id).catch(() => toast.error("Something went wrong."));
-    // });
+    startTransition(() => {
+      upsertUserProgress(id).catch(() => toast.error("Something went wrong."));
+    });
   };
 
   return (
