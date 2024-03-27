@@ -4,6 +4,7 @@ import "./globals.css";
 const font = Nunito({ subsets: ["latin"] });
 
 import ClerkProvider from "@/providers/clerk-provider";
+import ToastProvider from "@/providers/toast-provider";
 
 export const metadata: Metadata = {
   title: "Duolingo Clone"
@@ -13,7 +14,10 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={font.className}>
-        <ClerkProvider>{children}</ClerkProvider>
+        <ClerkProvider>
+          {children}
+          <ToastProvider />
+        </ClerkProvider>
       </body>
     </html>
   );
