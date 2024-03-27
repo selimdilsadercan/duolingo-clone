@@ -14,6 +14,15 @@
 - [x] add middleware.ts
 - [x] make the signin button mode to modal
 
+- [x] create neon project
+- [x] copy connection string as DATABASE_URL to .env
+- [x] "npm i drizzle-orm @neondatabase/serverless"
+- [x] "npm i -D drizzle-kit pg"
+- [x] add "studio": "npx drizzle-kit studio", and "push": "npx drizzle-kit push:pg" to package.json scripts
+- [x] create /db/drizzle.ts
+- [x] create /db/schema.ts and create schemas
+- [x] "npm i dotenv" and create /drizzle.config.ts
+
 ---
 
 - primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, clerk
