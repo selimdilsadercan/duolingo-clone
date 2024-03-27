@@ -1,11 +1,13 @@
 import { getCourseProgress, getLessonPercentage, getUnits, getUserProgress, getUserSubscription } from "@/db/queries";
 import { redirect } from "next/navigation";
+import { lessons, units as unitsSchema } from "@/db/schema";
 import FeedWrapper from "@/components/learn/FeedWrapper";
 import Navbar from "@/components/learn/Navbar";
 import Promo from "@/components/learn/Promo";
 import Quests from "@/components/learn/Quests";
 import StickyWrapper from "@/components/learn/StickyWrapper";
 import UserProgress from "@/components/learn/UserProgress";
+import Unit from "@/components/learn/Unit";
 
 async function Page() {
   const userProgressData = getUserProgress();
@@ -35,7 +37,7 @@ async function Page() {
       </StickyWrapper>
       <FeedWrapper>
         <Navbar title={userProgress.activeCourse.title} />
-        {/* {units.map((unit) => (
+        {units.map((unit) => (
           <div key={unit.id} className="mb-10">
             <Unit
               id={unit.id}
@@ -43,17 +45,11 @@ async function Page() {
               description={unit.description}
               title={unit.title}
               lessons={unit.lessons}
-              activeLesson={
-                courseProgress.activeLesson as
-                  | (typeof lessons.$inferSelect & {
-                      unit: typeof unitsSchema.$inferSelect;
-                    })
-                  | undefined
-              }
+              activeLesson={courseProgress.activeLesson as (typeof lessons.$inferSelect & { unit: typeof unitsSchema.$inferSelect }) | undefined}
               activeLessonPercentage={lessonPercentage}
             />
           </div>
-        ))} */}
+        ))}
       </FeedWrapper>
     </div>
   );

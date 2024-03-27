@@ -27,7 +27,7 @@
 ---
 
 - primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, clerk, neon, drizzle-orm
-- secondary stack: bun
+- secondary stack: bun, react-circular-progressbar
 - ui: font = nunito, icons = lucide
 - extensions:
 
@@ -42,3 +42,4 @@
 - drizzle schema'daki elemanları typeof kullanarak alabiliyoruz
 - rid-cols-[repeat(auto-fill,minmax(210px,1fr))] ile auto grid yapabiliyoruz
 - lucide icon kalınlığını stroke-[] vererek ayarlayabiliyosun
+- ayrı ayrı await eklemek yerine hepsini tek seferde Promise.all diyerek fetchliyo
