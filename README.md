@@ -41,3 +41,4 @@
 - react cache ile basit düzey caching yapabiliyoruz
 - drizzle schema'daki elemanları typeof kullanarak alabiliyoruz
 - rid-cols-[repeat(auto-fill,minmax(210px,1fr))] ile auto grid yapabiliyoruz
+- lucide icon kalınlığını stroke-[] vererek ayarlayabiliyosun

@@ -12,6 +12,8 @@ export const coursesRelations = relations(courses, ({ many }) => ({
   units: many(units)
 }));
 
+////
+
 export const units = pgTable("units", {
   id: serial("id").primaryKey(),
   title: text("title").notNull(), // Unit 1
@@ -23,12 +25,11 @@ export const units = pgTable("units", {
 });
 
 export const unitsRelations = relations(units, ({ many, one }) => ({
-  course: one(courses, {
-    fields: [units.courseId],
-    references: [courses.id]
-  }),
+  course: one(courses, { fields: [units.courseId], references: [courses.id] }),
   lessons: many(lessons)
 }));
+
+////
 
 export const lessons = pgTable("lessons", {
   id: serial("id").primaryKey(),
@@ -40,12 +41,11 @@ export const lessons = pgTable("lessons", {
 });
 
 export const lessonsRelations = relations(lessons, ({ one, many }) => ({
-  unit: one(units, {
-    fields: [lessons.unitId],
-    references: [units.id]
-  }),
+  unit: one(units, { fields: [lessons.unitId], references: [units.id] }),
   challenges: many(challenges)
 }));
+
+////
 
 export const challengesEnum = pgEnum("type", ["SELECT", "ASSIST"]);
 
@@ -60,13 +60,12 @@ export const challenges = pgTable("challenges", {
 });
 
 export const challengesRelations = relations(challenges, ({ one, many }) => ({
-  lesson: one(lessons, {
-    fields: [challenges.lessonId],
-    references: [lessons.id]
-  }),
+  lesson: one(lessons, { fields: [challenges.lessonId], references: [lessons.id] }),
   challengeOptions: many(challengeOptions),
   challengeProgress: many(challengeProgress)
 }));
+
+////
 
 export const challengeOptions = pgTable("challenge_options", {
   id: serial("id").primaryKey(),
@@ -80,11 +79,10 @@ export const challengeOptions = pgTable("challenge_options", {
 });
 
 export const challengeOptionsRelations = relations(challengeOptions, ({ one }) => ({
-  challenge: one(challenges, {
-    fields: [challengeOptions.challengeId],
-    references: [challenges.id]
-  })
+  challenge: one(challenges, { fields: [challengeOptions.challengeId], references: [challenges.id] })
 }));
+
+////
 
 export const challengeProgress = pgTable("challenge_progress", {
   id: serial("id").primaryKey(),
@@ -96,11 +94,10 @@ export const challengeProgress = pgTable("challenge_progress", {
 });
 
 export const challengeProgressRelations = relations(challengeProgress, ({ one }) => ({
-  challenge: one(challenges, {
-    fields: [challengeProgress.challengeId],
-    references: [challenges.id]
-  })
+  challenge: one(challenges, { fields: [challengeProgress.challengeId], references: [challenges.id] })
 }));
+
+////
 
 export const userProgress = pgTable("user_progress", {
   userId: text("user_id").primaryKey(),
@@ -112,11 +109,10 @@ export const userProgress = pgTable("user_progress", {
 });
 
 export const userProgressRelations = relations(userProgress, ({ one }) => ({
-  activeCourse: one(courses, {
-    fields: [userProgress.activeCourseId],
-    references: [courses.id]
-  })
+  activeCourse: one(courses, { fields: [userProgress.activeCourseId], references: [courses.id] })
 }));
+
+////
 
 export const userSubscription = pgTable("user_subscription", {
   id: serial("id").primaryKey(),
