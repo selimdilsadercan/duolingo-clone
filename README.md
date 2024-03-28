@@ -7,6 +7,9 @@
 - [x] "npx shadcn-ui@latest init" to initialize shadcn
 - [x] html, body, :root { height: 100% } thing at app/globals.css
 
+- [x] "npx shadcn-ui@latest add sonner"
+- [x] add /providers/toast-provider.tsx and add to /layout.tsx
+
 - [x] "npm i @clerk/nextjs"
 - [x] create clerk project
 - [x] add .env keys
@@ -38,8 +41,12 @@
 - gamish tarzda assetler için: https://kenney.nl/
 - bayrak paketi: https://flagpack.xyz/
 - microsoft emoji paketi: https://github.com/microsoft/fluentui-emoji
-- react cache ile basit düzey caching yapabiliyoruz
+- react cache ve revalidatePath ile basit düzey caching yapabiliyoruz
 - drizzle schema'daki elemanları typeof kullanarak alabiliyoruz
 - rid-cols-[repeat(auto-fill,minmax(210px,1fr))] ile auto grid yapabiliyoruz
 - lucide icon kalınlığını stroke-[] vererek ayarlayabiliyosun
 - ayrı ayrı await eklemek yerine hepsini tek seferde Promise.all diyerek fetchliyo
+- normalde .ts dosyasını node ./a.ts diyerek eğer require kullandıysan çalıştırıyosun, ama tsx, tsnode ya da bun kullanabilirsin
+- bun daha windows'a çıkmadı
+- terminal komutlarını package.json'daki scripts'e ekleyerek kısaltabilirsin
+- drizzle'da table ya da sütün isimlerinde conflict yaşandığında sorunu terminalden çözebiliyosun
