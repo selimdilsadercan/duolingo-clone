@@ -30,7 +30,7 @@
 ---
 
 - primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, clerk, neon, drizzle-orm
-- secondary stack: bun, react-circular-progressbar
+- secondary stack: zustand, bun, react-circular-progressbar, react-confetti, react-use
 - ui: font = nunito, icons = lucide
 - extensions:
 
