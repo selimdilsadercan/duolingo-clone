@@ -41,6 +41,7 @@
 - gamish tarzda assetler için: https://kenney.nl/
 - bayrak paketi: https://flagpack.xyz/
 - microsoft emoji paketi: https://github.com/microsoft/fluentui-emoji
+- yapay zeka ile ses doyaları için: https://elevenlabs.io/
 - react cache ve revalidatePath ile basit düzey caching yapabiliyoruz
 - drizzle schema'daki elemanları typeof kullanarak alabiliyoruz
 - rid-cols-[repeat(auto-fill,minmax(210px,1fr))] ile auto grid yapabiliyoruz
@@ -50,3 +51,6 @@
 - bun daha windows'a çıkmadı
 - terminal komutlarını package.json'daki scripts'e ekleyerek kısaltabilirsin
 - drizzle'da table ya da sütün isimlerinde conflict yaşandığında sorunu terminalden çözebiliyosun
+- react-use useAudio ile ses çalabiliyosun
+- react-use useKey ile çok daha kolay şekilde shortcutlar oluşturabiliyosun
+- loading state'leri react startTransition ile yapıyor
