@@ -36,7 +36,14 @@
 - [x] open webook endpoint -> test in local env -> paste this webhooks key to .env as STRIPE_WEBHOOK_SECRET
 - [x] create /app/api/webhooks/stripe/route.ts
 - [x] add /api/webhooks/stripe to publicRoutes in middleware.ts
-- [ ] search for customer portal, activate test link
+- [x] search for customer portal, activate test link
+
+- [x] "npm run build"
+- [x] create vercel project
+- [x] copy .env keys and deploy to vercel
+- [x] change NEXT_PUBLIC_APP_URL without trailing slash
+- [x] create stripe hosted webhook endpoint with published domain and copy signin secret to vercel enviorment variables
+- [x] redeploy without cache
 
 ---
 
@@ -69,3 +76,5 @@
 - 3d efektli buton nasıl yapılır
 - react-admin paketi ile hızlı admin paneli yapılıyor
 - react-adminle liste oluştururken Resource içine list kısmına ListGuesser kullanarak geçici bir şey kullanabiliyosun
+- npm run build, npm run dev'de görüntülenmeyen ama vercelda görüntülenen bazı hataları gösteriyor
+- npm run dev çalışırken npm run build yapamıyosun
