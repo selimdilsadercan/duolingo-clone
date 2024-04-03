@@ -40,7 +40,7 @@
 
 ---
 
-- primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, clerk, neon, drizzle-orm
+- primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, clerk, neon, drizzle-orm, react-admin
 - secondary stack: zustand, bun, react-circular-progressbar, react-confetti, react-use
 - ui: font = nunito, icons = lucide
 - extensions:
@@ -66,3 +66,4 @@
 - react-use useKey ile çok daha kolay şekilde shortcutlar oluşturabiliyosun
 - loading state'leri react startTransition ile yapıyor
 - stripe account inceleme, hesap deaktive etmek
+- react-admin paketi ile hızlı admin paneli yapılıyor
