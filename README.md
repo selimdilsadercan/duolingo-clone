@@ -66,4 +66,6 @@
 - react-use useKey ile çok daha kolay şekilde shortcutlar oluşturabiliyosun
 - loading state'leri react startTransition ile yapıyor
 - stripe account inceleme, hesap deaktive etmek
+- 3d efektli buton nasıl yapılır
 - react-admin paketi ile hızlı admin paneli yapılıyor
+- react-adminle liste oluştururken Resource içine list kısmına ListGuesser kullanarak geçici bir şey kullanabiliyosun
