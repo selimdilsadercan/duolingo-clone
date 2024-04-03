@@ -27,6 +27,17 @@
 - [x] "npm i dotenv" and create /drizzle.config.ts
 - [x] "npm i -g tsx" and add "seed": "tsx ./scripts/seed.ts" and run npm run seed to seed database
 
+- [x] "npm i stripe"
+- [x] create /lib/stripe.ts
+- [x] create new stripe account
+- [x] copy developers -> API Keys -> Secret Key as STRIPE_API_KEY to .env
+- [x] "C:\Users\dilsa\Documents\Uygulamalar\stripe_1.19.4_windows_x86_64\stripe.exe" login
+- [x] "C:\Users\dilsa\Documents\Uygulamalar\stripe_1.19.4_windows_x86_64\stripe.exe" listen --forward-to localhost:3000/api/webhooks/stripe
+- [x] open webook endpoint -> test in local env -> paste this webhooks key to .env as STRIPE_WEBHOOK_SECRET
+- [x] create /app/api/webhooks/stripe/route.ts
+- [x] add /api/webhooks/stripe to publicRoutes in middleware.ts
+- [ ] search for customer portal, activate test link
+
 ---
 
 - primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, clerk, neon, drizzle-orm
@@ -54,3 +65,4 @@
 - react-use useAudio ile ses çalabiliyosun
 - react-use useKey ile çok daha kolay şekilde shortcutlar oluşturabiliyosun
 - loading state'leri react startTransition ile yapıyor
+- stripe account inceleme, hesap deaktive etmek
