@@ -10,7 +10,8 @@
     "studio": "npx drizzle-kit studio",
     "push": "npx drizzle-kit push:pg",
     "seed": "tsx ./scripts/seed.ts",
-    "reset": "tsx ./scripts/reset.ts"
+    "reset": "tsx ./scripts/reset.ts",
+    "prod": "tsx ./scripts/prod.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.9",
